@@ -319,7 +319,7 @@ ul {
   justify-content: center;
   align-items: center;
   margin-top: 0px;
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .mailing-forms {
@@ -827,11 +827,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-icon:hover,
-.close-icon:focus {
+.modal-close:focus, .modal-close:hover {
   fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .is-hidden {
@@ -852,6 +853,17 @@ ul {
 
 .modal-form-field {
   margin-bottom: 10px;
+}
+
+.comment-text {
+  margin-bottom: 20px;
+}
+
+.checkbox-form-field {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .input-modal-wrap {
@@ -939,6 +951,11 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check-text span:focus, .modal-check-text span:hover {
+  border: 1px solid var(--accent-color);
 }
 
 .modal-check:checked + .modal-check-text span {
