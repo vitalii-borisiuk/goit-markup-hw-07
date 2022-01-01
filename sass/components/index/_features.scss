@@ -1,11 +1,11 @@
 .features {
   background-color: var(--first-color);
 }
-.features-icon-list {
+.features-list__icon-list {
   display: flex;
   justify-content: center;
 }
-.features-icon-item {
+.features-list__icon-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,14 +20,14 @@
 .features-list {
   display: flex;
 }
-.features-item {
+.features-list__item {
   max-width: 270px;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.features-func {
+.features-list__func {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -36,7 +36,7 @@
   color: var(--second-color);
   margin-bottom: 10px;
 }
-.features-text {
+.features-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
